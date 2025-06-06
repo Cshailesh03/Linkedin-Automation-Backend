@@ -3,9 +3,9 @@ dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-import linkedinRoutes from './routes/linkedin.routes.js';
-import organizationRoutes from "./routes/organization.routes.js";
-import postRoutes from './routes/post.routes.js';
+import linkedinRoutes from './src/routes/linkedin.routes.js';
+import organizationRoutes from "./src/routes/organization.routes.js";
+import postRoutes from './src/routes/post.routes.js';
 
 const app = express();
 

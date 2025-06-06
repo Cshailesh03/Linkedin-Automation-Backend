@@ -1,9 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config({ path: '../env' });
 
-import connectDB from '../backend/config/db.js';
+import connectDB from '../backend/src/config/db.js';
 import { app } from '../backend/app.js';
-import { initializeScheduledJobs } from '../backend/utils/scheduler.js';
+import { initializeScheduledJobs } from '../backend/src/utils/scheduler.js';
 
 connectDB()
   .then(async () => {
