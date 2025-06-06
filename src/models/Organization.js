@@ -5,8 +5,8 @@ const organizationSchema = new mongoose.Schema({
   linkedinClientId: String,
   linkedinClientSecret: String,
   linkedinRedirectUri: String,
-  accessToken: String,
-  memberId: String,
+  accessToken:  { type: String, default: null },
+  memberId:  { type: String, default: null },
   organizationId: String, // Add this for company page posting
   // userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // If you have user model
 });

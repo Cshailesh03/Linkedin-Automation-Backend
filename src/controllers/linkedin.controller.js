@@ -47,7 +47,7 @@ export const handleCallback = asyncHandler(async (req, res) => {
   await org.save();
 
   // res.status(200).json(new ApiResponse(200, null, "✅ LinkedIn connected successfully"));
-  res.redirect(`http://localhost:3000/linkedin-connected?orgId=${org._id}`);
+  res.redirect(`http://localhost:5173/organizations`);
 });
 
 // Post content to LinkedIn with multiple images support
